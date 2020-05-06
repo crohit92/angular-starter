@@ -1,11 +1,31 @@
 @import "./scss/theme/theme";
-// @import './scss/bootstrap-fork/bootstrap-reboot.scss';
+
+@import "./scss/bootstrap-fork/functions";
+@import "./scss/bootstrap-fork/variables";
+@import "./scss/bootstrap-fork/mixins";
+@import "./scss/bootstrap-fork/reboot";
+
+// @import "./scss/bootstrap-fork/bootstrap-grid.scss";
+
+@import "./scss/bootstrap-fork/mixins/breakpoints";
+@import "./scss/bootstrap-fork/mixins/grid-framework";
+@import "./scss/bootstrap-fork/mixins/grid";
+
+@import "./scss/bootstrap-fork/grid";
+@import "./scss/bootstrap-fork/utilities";
 
 /* You can add global styles to this file, and also import other style files */
 
 html,
 body {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
   height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 body {
   margin: 0;
